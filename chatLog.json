@@ -1,10 +1,14 @@
-{
-    [
-        {
-            "User 1" : "Hello!"
-        },
-        {
-            "User 2" : "Hello, how are you?"
-        }
-    ]
-}
+[
+    {
+        "user" : "randomUser69",
+        "message" : "hey there"
+    },
+    {
+        "user" : "freeHugs",
+        "message" : "whats up my man"
+    },
+    {
+        "user" : "JV",
+        "message" : "get back to work u slackers"
+    }
+]
