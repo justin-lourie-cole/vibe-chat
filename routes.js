@@ -4,14 +4,26 @@ const fs = require('fs')
 
 const router = express.Router()
 
-
-
-router.get('/', (req, res) => {
+// Helper funtion for retrieving data
+function getData(callback) {
     fs.readFile('chatLog.json', 'utf8', (err, data) => {
         if(err) console.log(err)
         const viewData = JSON.parse(data)
-        res.render('chat', viewData)
+        callback(viewData)
+    })
+}
+
+
+
+router.get('/', (req, res) => {
+    const template = 'chat'
+    getData((data) => {
+        res.render(template, data)
     })
 })
+
+// router.get('/', (req, res) => {
+//     res.render('layouts/main')
+// })
 
 module.exports = router
