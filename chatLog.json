@@ -1,4 +1,6 @@
-[
+{
+    "Messages" : 
+    [
     {
         "user" : "randomUser69",
         "message" : "hey there"
@@ -11,4 +13,5 @@
         "user" : "JV",
         "message" : "get back to work u slackers"
     }
-]
+    ]
+}
