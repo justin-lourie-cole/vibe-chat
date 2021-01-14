@@ -3,4 +3,10 @@
         {{> displayMsg}}
     {{/each}}
 </div>
-<h2>Welcome to Vchat</h2>
+<form action="/" method="POST">
+    {{!-- <label for="user">username:</label> --}}
+    <input type="text" name="user" placeholder="username">
+    {{!-- <label for="message">message:</label> --}}
+    <input type="text" name="message" placeholder="your message here">
+    <button type="submit">Send</button>
+</form>
