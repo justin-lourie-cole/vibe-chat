@@ -21,27 +21,18 @@ router.get("/", (req, res) => {
 })
 
 // Message POST route - rough draft
-router.post("/", (req, res) => {
-  const template = "chat"
-  const messagePost = req.body
-// retrieve post data
+router.post('/', (req, res) => {
   getData((data) => {
-      let messages = data.find(item => {
-          return item.Messages
-      })
-      let newMessage = {
-        Messages.user = messagePost.user
-        Messages.message = messagePost.message
-        }
-      Messages.push(newMessage)
-      const stringMessage = JSON.stringify(data, null, 2)
-
-  fs.writeFile("chatLog.json", stringMesssage, "utf8", (err, data) => {
-    if (err) console.log(err)
-    res.redirect("/")
+    let newMessage = {
+      user: req.body.user,
+      message: req.body.message
+    }
+    data.Messages.push(newMessage)
+    fs.writeFile('./chatLog.json', JSON.stringify(data), (err) => {
+      res.redirect('/')
+    })
   })
 })
-}
 
 // router.get('/', (req, res) => {
 //     res.render('layouts/main')
