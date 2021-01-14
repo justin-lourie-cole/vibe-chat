@@ -13,7 +13,7 @@ server.set('view engine', 'hbs')
 
 // Your routes/router(s) should go here
 server.get('/', (req, res) => {
-    res.send('Hello World!')
+    res.render('chat')
 })
 
 module.exports = server
