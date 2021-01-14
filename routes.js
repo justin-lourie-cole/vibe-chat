@@ -13,6 +13,11 @@ function getData(callback) {
   })
 }
 
+
+// fs.watchFile('chatLog.json', (curr, prev) => {
+//   if(curr != prev) res.redirect('/', curr)
+// })
+
 router.get("/", (req, res) => {
   const template = "chat"
   getData((data) => {
