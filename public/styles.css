@@ -22,6 +22,8 @@ header h2 {
 
 #chatBox {
     width: 400px;
+    overflow-y: scroll;
+    max-height: 350px;
     background: #f7f7f7;
     border-radius: 20px;
     margin: 0 auto;
