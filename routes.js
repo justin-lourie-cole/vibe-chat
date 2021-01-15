@@ -1,5 +1,6 @@
 const express = require('express')
 const fs = require('fs')
+const moment = require('moment')
 
 function updateScroll() {
   var element = document.getElementById('chatBox')
@@ -32,6 +33,7 @@ router.post('/', (req, res) => {
     let newMessage = {
       user: req.body.user,
       message: req.body.message,
+      createdAt: moment(new Date().toISOString()).fromNow(),
     }
     data.Messages.push(newMessage)
     fs.writeFile('./chatLog.json', JSON.stringify(data), (err) => {
