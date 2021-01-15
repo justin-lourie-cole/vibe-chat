@@ -27,13 +27,30 @@ router.get('/', (req, res) => {
   })
 })
 
+router.post('/likemsg/:id', (req, res) => {
+  getData((data) => {
+      message = data.Messages.find(({ id }) => id === Number(req.params.id))
+      if (!message.like) {
+        message.like = true
+      } else {
+        message.like = false
+      }
+      data.Messages[Number(req.params.id)-1] = message
+      fs.writeFile('./chatLog.json', JSON.stringify(data, null, 2), (err) => {
+        res.redirect('/')
+      })
+  })
+})
+
 // Message POST route - rough draft
 router.post('/', (req, res) => {
   getData((data) => {
     let newMessage = {
+      id: data.Messages.length() + 1,
       user: req.body.user,
       message: req.body.message,
-      createdAt: moment(new Date().toISOString()).fromNow(),
+      like: false,
+      createdAt: moment(new Date().toISOString()).fromNow()
     }
     data.Messages.push(newMessage)
     fs.writeFile('./chatLog.json', JSON.stringify(data, null, 2), (err) => {
