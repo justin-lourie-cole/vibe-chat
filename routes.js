@@ -36,7 +36,7 @@ router.post('/', (req, res) => {
       createdAt: moment(new Date().toISOString()).fromNow(),
     }
     data.Messages.push(newMessage)
-    fs.writeFile('./chatLog.json', JSON.stringify(data), (err) => {
+    fs.writeFile('./chatLog.json', JSON.stringify(data, null, 2), (err) => {
       res.redirect('/')
     })
   })
