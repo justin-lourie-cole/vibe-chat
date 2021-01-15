@@ -41,6 +41,10 @@ form {
     margin: 0 auto;
 }
 
+#chatBox {
+    scroll-behavior: smooth;
+}
+
 .like {
     background:rgba(255, 255, 255, .8);
     position: absolute;
@@ -81,6 +85,12 @@ form {
     position: relative;
 }
 
+.msg_details {
+    display: flex;
+    flex-direction: row;
+    margin-right: 2rem;
+}
+
 .msg::after {
     content: '';
     height: 20px;
@@ -97,8 +107,15 @@ form {
     font-size: 1.8rem;
 }
 
+p.createdAt {
+    font-size: 1.2rem;
+    margin-left: 0.5rem;
+    color: rgba(255, 255, 255, .7);
+}
+
+
 .msg .user {
     font-size: 1.3rem;
     font-weight: bold;
-    color: rgba(255, 255, 255, .7)      ;
+    color: rgba(255, 255, 255, .8)      ;
 }
