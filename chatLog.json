@@ -11,7 +11,7 @@
       "id": 2,
       "user": "justin",
       "message": "sup",
-      "like": true,
+      "like": false,
       "createdAt": "a few seconds ago"
     },
     {

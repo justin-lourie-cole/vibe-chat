@@ -23,6 +23,18 @@
         <h2>Vchat</h2>
     </header>
     {{{body}}}
+    <script>
+        const Chatbox = document.getElementById("chatBox")
+        let bottom = false
+        document.addEventListener("load", function () {
+            if(!bottom){
+                Chatbox.scrollTop = Chatbox.scrollHeight
+                bottom = true
+            }
+            
+        });
+
+    </script>
 </body>
 
 </html>
