@@ -1,16 +1,28 @@
 {
   "Messages": [
     {
-      "user": "randomUser69",
-      "message": "hey there"
-    },
-    {
+      "id": 1,
       "user": "freeHugs",
-      "message": "whats up my man"
+      "message": "How's it going",
+      "like": false
     },
     {
+      "id": 2,
+      "user": "freeHugs",
+      "message": "whats up my man",
+      "like": false
+    },
+    {
+      "id": 3,
       "user": "JV",
-      "message": "get back to work u slackers"
+      "message": "get back to work u slackers",
+      "like": true
+    },
+    {
+      "id": 4,
+      "user": "test",
+      "message": "some text",
+      "like": false
     }
   ]
 }

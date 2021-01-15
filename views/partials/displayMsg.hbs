@@ -1,4 +1,17 @@
 <div class="msg">
     <p>{{message}}</p>
     <p class="user">{{user}}</p>
+    <form action="/likemsg/{{id}}" method="POST">
+        {{#if like}}
+
+        <div class="like on"></div>
+
+        {{else}}
+        
+        <div class="like off"></div>
+            
+        {{/if}} 
+        <input type="hidden" name="like" value="{{like}}">
+        <input type="submit" value="">
+    </form>
 </div>
