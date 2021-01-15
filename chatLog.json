@@ -1,1 +1,32 @@
-{"Messages": []}
+{
+  "Messages": [
+    {
+      "id": 1,
+      "user": "justin",
+      "message": "sup",
+      "like": true,
+      "createdAt": "a few seconds ago"
+    },
+    {
+      "id": 2,
+      "user": "justin",
+      "message": "sup",
+      "like": true,
+      "createdAt": "a few seconds ago"
+    },
+    {
+      "id": 3,
+      "user": "justin",
+      "message": "sup",
+      "like": true,
+      "createdAt": "a few seconds ago"
+    },
+    {
+      "id": 4,
+      "user": "justin",
+      "message": "u up?",
+      "like": true,
+      "createdAt": "a few seconds ago"
+    }
+  ]
+}
