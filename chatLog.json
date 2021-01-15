@@ -2,31 +2,24 @@
   "Messages": [
     {
       "id": 1,
-      "user": "justin",
+      "user": "randomUser69",
       "message": "sup",
       "like": true,
-      "createdAt": "a few seconds ago"
+      "createdAt": "a few minutes ago"
     },
     {
       "id": 2,
-      "user": "justin",
-      "message": "sup",
+      "user": "freeHugs",
+      "message": "hey hey",
       "like": false,
-      "createdAt": "a few seconds ago"
+      "createdAt": "a few minutes ago"
     },
     {
       "id": 3,
-      "user": "justin",
-      "message": "sup",
+      "user": "JV",
+      "message": "get back to work you slackers!",
       "like": true,
-      "createdAt": "a few seconds ago"
-    },
-    {
-      "id": 4,
-      "user": "justin",
-      "message": "u up?",
-      "like": true,
-      "createdAt": "a few seconds ago"
+      "createdAt": "says this a lot"
     }
   ]
 }
